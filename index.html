@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--HEADER SECTION-->
+    <header>
+        <a href="#" class="logo"><span>8</span>9</a>
+
+        <ul class="navbar">
+            <li><a href="#home" class="active">Conóceme</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contacts">Contáctame</a></li>
+        </ul>
+
+        <div class="menu-btn">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <!--HOME SECTION-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <span>Desarrollador de Software</span>
+            <h1>Dary Pincay</h1>
+            <p>Soy un analista especializado en el análisis de casos de uso y requisitos de software, con experiencia en la aplicación de la metodología ágil Scrum. Además, tengo habilidades como desarrollador de aplicaciones Frontend, contribuyendo al diseño y desarrollo de soluciones tecnológicas innovadoras y de alta calidad.</p>
+            <div class="main-btn">
+                <a href="document/CV_Pincay.pdf" class="btn">Descargar CV</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="img/fotoperfil2.1.png" alt="" srcset="">
+        </div>
+    </section>
+
+    <div class="share">
+        <p>Echa un vistazo a mi: </p>
+
+        <div class="social">
+            <a href="https://github.com/darypincay"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </div>
+
+    <!--SKILLS SECTION-->
+    <section class="skills" id="skills">
+        <h2>Habilidades</h2>
+        <div class="skill">
+            <h3>Python</h3>
+            <div class="bar">
+                <div class="fill" data-percent="90"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>Javascript</h3>
+            <div class="bar">
+                <div class="fill" data-percent="75"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>MySQL</h3>
+            <div class="bar">
+                <div class="fill" data-percent="80"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--SERVICES SECTION-->
+    <div class="services-title" id="services">
+        <h2>Servicios</h2>
+    </div>
+    <section class="services">
+        <div class="service">
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="img/web-dev.jpg" alt="#">
+                </div>
+                <div class="service-content">
+                    <h3>Desarrollo de Aplicaciones Web</h3>
+                    <p>Ofrezco servicios de desarrollo de aplicaciones web personalizadas, utilizando tecnologías modernas como HTML, CSS, JavaScript y frameworks como React o Angular.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="img/marketing.jpg" alt="#">
+                </div>
+                <div class="service-content">
+                    <h3>Marketing Digital</h3>
+                    <p>Proporciono estrategias de marketing digital efectivas para aumentar la visibilidad de tu negocio en línea. Desde la optimización de redes sociales hasta campañas de publicidad pagada, puedo ayudarte a alcanzar tus objetivos de marketing.</p>
+                </div>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="img/consulta-tech.jpg" alt="#">
+                </div>
+                <div class="service-content">
+                    <h3>Consultoría Tecnológica</h3>
+                    <p>Brindo servicios de consultoría tecnológica para ayudarte a tomar decisiones informadas sobre tecnología y estrategia digital. Desde la evaluación de tecnologías emergentes hasta la planificación de proyectos y la optimización de procesos, estoy aquí para ayudarte a aprovechar al máximo la tecnología en tu negocio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--PROJECTS SECTION-->
+    <div class="projects-title" id="projects">
+        <h2>Proyectos</h2>
+    </div>
+
+    <section class="projects">
+        <div class="project-card">
+            <div class="project" onclick="showDetails('project1')">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="project-image" src="img/Presione-aquí-background3.png" alt="Project 1">
+                    </div>
+                    <div class="flip-card-back" id="project1-details">
+                        <img class="project-detail-image" src="img/register.jpg" alt="Project 1">
+                        <div class="project-description">
+                            <h3>Sistema CRUD</h3>
+                            <p>Sistema que permite crear, leer, modificar y borrar usuarios</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="project-card">
+            <div class="project" onclick="showDetails('project2')">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="project-image" src="img/Presione-aquí-background3.png" alt="Project 2">
+                    </div>
+                    <div class="flip-card-back" id="project2-details">
+                        <img class="project-detail-image" src="img/sugardarkladies.png" alt="Project 2">
+                        <div class="project-description">
+                            <h3>SUGAR DARK LADIES</h3>
+                            <p>Aplicacion de Citas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="project-card">
+            <div class="project" onclick="showDetails('project3')">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="project-image" src="img/Presione-aquí-background3.png" alt="Project 3">
+                    </div>
+                    <div class="flip-card-back" id="project3-details">
+                        <img class="project-detail-image" src="img/starunemi.jpg" alt="Project 3">
+                        <div class="project-description">
+                            <h3>Sistema de Tratamiento de Aguas Residuales (STAR)</h3>
+                            <p>Sistema que muestra en tiempo real los valores del agua usando graficos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!--CONTACT ME SECTION-->
+    <div class="contacts-title" id="contacts">
+        <h2>Contáctame</h2>
+    </div>
+    <section class="contact">
+        <div class="contact-info">
+            <i class='bx bx-envelope'></i>
+            <input type="email" id="emailInput" value="dpincayp@unemi.edu.ec" readonly>
+            <button class="copy-icon" onclick="copyToClipboard(event)">
+                <i class='bx bxs-copy'></i>
+            </button>
+        </div>
+    </section>
+    
+    
+    
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
